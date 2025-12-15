@@ -129,3 +129,4 @@ Workarounds:
 
 - Access control is server-side; client checks are not trusted.
 - The NUI uses an iframe to load external pages. Only use trusted URLs.
+
