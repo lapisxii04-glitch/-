@@ -112,6 +112,19 @@ You can edit these to match your server language.
 - If a prop doesn’t spawn:
   - Check `model` is valid and streamed; enable `Config.Debug = true` to see logs.
 
+## Known limitations (some links may misbehave)
+
+Some websites are not reliable inside an in-game NUI iframe.
+
+- Some URLs may not load at all due to iframe restrictions (for example `X-Frame-Options` / `Content-Security-Policy`).
+- Some pages can interfere with input/focus handling. In rare cases (reported with pages like Google Sheets), the UI may stop responding to close inputs (ESC/Backspace or overlay click) and appear “stuck open”.
+
+Workarounds:
+
+- Prefer simpler pages designed for embedding.
+- If the provider offers it, use a “published” / “embed” URL or a PDF/view-only link.
+- If it happens in-game, the fastest recovery is typically reopening/closing the UI again, or restarting the resource.
+
 ## Security notes
 
 - Access control is server-side; client checks are not trusted.
