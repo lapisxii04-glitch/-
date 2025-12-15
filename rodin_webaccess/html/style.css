@@ -1,0 +1,37 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainFrame { 
+    width: 70%;
+    height: 70%;
+    border: none;
+    border-radius: 8px;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10000;
+}
